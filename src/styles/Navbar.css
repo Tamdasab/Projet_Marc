@@ -1,0 +1,149 @@
+nav{
+    height: 130px;
+  }
+  
+  nav.fix{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      /*width:73.5rem;*/
+      font-size: 20px;
+      background: linear-gradient(45deg, rgb(255, 254, 254), #11760c);
+    }
+    
+    
+    
+    /*.navbar::before{
+      content: "";
+      background-image: conic-gradient(
+          #9ed957 20deg,
+          transparent 120deg
+      );
+      width: 200%;
+      height: 700%;
+      position: absolute;
+      animation: rotate 2s linear infinite;
+    }
+    
+    @keyframes rotate {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+    }*/
+    
+    /*rgb(66, 156, 14)*/
+    .navbar .logo {
+      color: rgb(10, 10, 10);
+      width: 200px;
+      height: 150px;
+      /*border-radius: 20px; margin-left: 20px;*/
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .searchbar {
+      position: absolute;
+      left: 45%;
+      transform: translate(-50%);
+    }
+    
+    .navbar .searchbar .input {
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      height: 37px;
+      width: 300px;
+      border: none;
+      outline: none;
+      padding: 0 20px;
+      /*margin-right: 3px;*/
+      color: rgb(7, 6, 6);
+      font-family: "Playfair Display", serif;
+      background: whitesmoke;
+    }
+    
+    .input:hover{
+      box-shadow: 10px 10px 20px #0000008c;
+    }
+    
+    #txtinput{
+      border: .5mm solid #11760c;
+    }
+  
+    #btninput{
+      height: 40px;
+      width: 150px;
+      background: linear-gradient(45deg, rgb(238, 238, 245), #11760c);
+      border: 0.5mm solid #11760c;
+    }
+    
+    .input[type='text']{
+      border-radius: 25px 25px 25px 25px;
+      
+    }
+    .input[type='submit']{
+      position: relative;
+      border-radius: 25px 25px 25px 25px;
+      cursor: pointer;
+    }
+    
+    .navbar .searchbar .btn {
+      border-radius: 38px;
+      border: none;
+      margin-right: 10px;
+      font-family: "Playfair Display", serif;
+      font-size: 15px;
+      color: rgb(0, 0, 0);
+    }
+    
+    .infobar{
+      right: -20%;
+      display: flex;
+    }
+  
+   
+    
+  
+    
+    .items {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+      letter-spacing: 0.5px;
+      padding: 0 7px;
+      position: relative;
+    }
+    
+    .items::after{
+      content: "";
+      position: absolute;
+      background-color: #fafbfa;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+    }
+    
+    .items:hover {
+      color: #fafbfa;
+    }
+    
+    .items:hover::after {
+      width: 100%;
+    }
+    
+    .connectcomponent{
+      display: flex;
+    }

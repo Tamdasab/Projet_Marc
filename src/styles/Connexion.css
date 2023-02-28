@@ -1,0 +1,208 @@
+.containerC{
+    position: relative;
+    margin-top: 60px;
+    margin-right: 700px;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('../assets/img3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.containerI{
+    position: relative;
+    margin-top: 50px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.inscription {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.inscription .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+    background: #fffefe;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.inscription .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 40%;
+    background: #11760c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input {
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #f8f7f7;
+    padding: 0 10px;
+}
+
+.right button {
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: #11760c;
+    border-radius: 30px;
+    transition: .5s ease;
+}
+
+.right button:hover {
+    border: 1px solid #11760c;
+    color: #11760c;
+    background: transparent;
+}
+
+.left p {
+    color: #fff;
+}
+
+.left button {
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: #11760c;
+    border-radius: 30px;
+    transition: .5s ease;
+}
+
+.left button:hover {
+    background: #fff;
+    color: #11760c;
+}
+
+.cnx{
+    background-color: #11760c;
+    border: 3px dashed white;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+.cnx :hover{
+    border: 4px solid white;
+}
+
+.connect {
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    margin-left: 750px;
+    padding-bottom: 50px;
+}
+
+.connect .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 40%;
+    background: #11760c;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.connect .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 60%;
+    background: #fffefe;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.right .social__media i{
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.right button:last-child {
+    display: none;
+}
+
+.delete {
+    display: none !important;
+}
+
+.add {
+    display: flex !important;
+}
+
+/* ==========================RESPONSIVE======================= */
+
+
+
+@media screen and (max-width: 700px) {
+    .left {
+        display: none !important;
+    }
+
+    .right {
+        width: 100% !important;
+        border-radius: 10px;
+    }
+
+    .right button:last-child {
+        display: block;
+        background: transparent;
+        border: 1px solid #11760c;
+        color: #11760c;
+    }
+
+    .right button:last-child:hover {
+        background: #11760c;
+        color: #fff !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .right .form input {
+        width: max-content;
+    }
+}

@@ -1,0 +1,21 @@
+.Accueil{
+    height: 82.1vh;
+    width: 100vw;
+    background-image: url('../assets/background1.jpg');
+    background-size: cover;
+}
+
+.title{
+    padding-top: 100px ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title span{
+    font-size: 50px;
+    color: #11760c;
+    transition: 1s;
+    font-weight: 50;
+  }
